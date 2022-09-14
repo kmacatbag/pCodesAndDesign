@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Headway | History</title>
+    <link rel="stylesheet" href="form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Horizontal Navigation -->
+    <nav>
+        <div class="logo" ; style="font-family: 'Dancing Script', Georgia, Times, serif">
+            <h4>Headway | Application</h4>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="plan.html">Plan</a></li>
+            <li><a href="summary.html">Summary</a></li>
+            <li><a href="timeline.html">Information</a></li>
+            <li><a href="personal.html">Personal</a></li>
+        </ul>
+
+    </nav>
+    
+    <!-- Application form -->
+    <div class="container">
+  <div style="text-align:center">
+    <h2>Registration Form</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+         <label for="adress">Adress:</label>
+          <input type="text" id="street" name="street adress" placeholder="Adress">
+          <input type="text" id="city" name="city" placeholder="City">
+          <input type="text" id="postal" name="Postal Code" placeholder="Postal Code">
+        <label for="special">Special Required</label>  
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <label for="special">How would you like to be contacted?</label>
+          <form action="/action_page.php">
+              <br>
+  <input type="radio" name="contact" value="email"> Email<br>
+  <input type="radio" name="contact" value="Phone"> Phone <br>
+          </form> 
+          <label for="special">SWhich course(s) are you registering?</label>  
+          <form action="/action_page.php">
+  <input type="checkbox" name="Java" value="Java"> Java<br>
+  <input type="checkbox" name="HTML" value="html"> html<br>
+  <input type="checkbox" name="C++" value="c++" checked> C++ <br><br>
+</form>
+        <label for="country">Country</label>
+        <select id="payment" name="Payment Method">
+          <option value="australia">Visa</option>
+          <option value="canada">MasterCard</option>
+          <option value="usa">Debit</option>
+        </select>
+          <div class="slidecontainer">
+  <p>Rate Your Previous Experience (with 10 is the bext):</p>
+  <input type="range" min="1" max="100" value="50">
+          </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+    
+    <!-- Footer -->
+    <footer>
+      <div id="socmedia">
+        <p id="footbottom">Created by Kyla Macatbag</p>
+      </div>
+    </footer>
+    
+</body>
+</html>

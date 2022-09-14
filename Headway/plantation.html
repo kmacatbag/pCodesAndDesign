@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Headway | Planning</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="plantation.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <!-- WARNING: THIS PART OF THE CODE INCLUDES JAVASCRIPT-->
+    
+    <!-- Horizontal Navigation -->
+    <nav>
+        <div class="logo" ; style="font-family: 'Dancing Script', Georgia, Times, serif">
+            <h4>Headway | Planning </h4>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="plan.html">Plan</a></li>
+            <li><a href="summary.html">Summary</a></li>
+            <li><a href="timeline.html">Information</a></li>
+            <li><a href="personal.html">Personal</a></li>
+        </ul>
+
+    </nav>
+    
+    <!-- Quotes for the user to be motivated -->
+    <div class="quotes">
+        <p>“If you can dream it, you can do it.” -Walt Disney</p>
+    </div>
+    <div class="quotes">
+        <p>"Your limitation—it’s only your imagination."</p>
+    </div>
+    <div class="quotes">
+        <p> “Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.” —Norman Vincent Peale </p>
+    </div>
+    <div class="quotes">
+        <p>"Great things never come from comfort zones."</p>
+    </div>
+    <div class="quotes">
+        <p>“The future belongs to those who believe in the beauty of their dreams.” —Eleanor Roosevelt</p>
+    </div>
+    <div class="quotes">
+        <p>"It’s going to be hard, but hard does not mean impossible."</p>
+    </div>
+    <div class="quotes">
+        <p>“Don’t watch the clock; do what it does. Keep going.” —Sam Levenson</p>
+    </div>
+    <div class="quotes">
+        <p>"Wake up with determination. Go to bed with satisfaction."</p>
+    </div>
+    <div class="quotes">
+        <p>“There will be obstacles. There will be doubters. There will be mistakes. But with hard work, there are no limits.” —Michael Phelps</p>
+    </div>
+    
+    <!-- Javascipt found online to have the quotes repeat in a loop-->
+    <script>
+    (function() {
+
+    var quotes = $(".quotes");
+    var quoteIndex = -1;
+
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(1000)
+            .delay(10000)
+            .fadeOut(1000, showNextQuote);
+    }
+
+    showNextQuote();
+
+    })();</script>
+
+    
+    
+    <!-- Checklist for the user to input -->
+    <div class="container">
+
+        <div class="to-do-list">
+
+            <h2><b>Checklist</b></h2>
+            <hr>
+            <ul>
+                <li>
+                    <input id="checkbox3" type="checkbox">
+                    <label for="checkbox3">Hand this project in</label>
+                </li>
+                <li>
+                    <input id="checkbox4" type="checkbox">
+                    <label for="checkbox4">Do assignment 3</label>
+                </li>
+                <li>
+                    <input id="checkbox5" type="checkbox">
+                    <label for="checkbox5">Study HTML/CSS exam</label>
+                </li>
+                <li>
+                    <input id="checkbox6" type="checkbox">
+                    <label for="checkbox6">Study Programming 2</label>
+                </li>
+                <li>
+                    <input id="checkbox7" type="checkbox">
+                    <label for="checkbox7">Study Exploring Religion </label>
+                </li>
+                <li>
+                    <input id="checkbox8" type="checkbox">
+                    <label for="checkbox8">Study Japanese</label>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    
+    
+    
+    <!--  Countdown timer -->
+    <h5 id="demo"></h5>
+    
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("April 22, 2019 9:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+    
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+
+</body>
+</html>

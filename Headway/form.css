@@ -1,0 +1,265 @@
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script';
+
+* {
+  box-sizing: border-box;
+  align-content: center;
+}
+
+body {
+  background-image: url(images/study.jpg);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* Form */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+    
+  .container {
+  width: 500px;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  .right {
+  left: 0%;
+  }
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 9vh;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: black;
+    text-shadow: black 0px 0px 1px;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+}
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: black;
+        text-shadow: black 0px 0px 2.3px;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 19px;
+    }
+
+/* Form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.clearfix{
+    overflow: auto;
+}
+
+/* Footer */
+footer {
+	height: 75px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 25px 0px;
+	background-color: #141414;
+}
+
+#socmedia {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contactmedia {
+  display: flex;
+  flex-direction: row;
+}
+
+footer a {
+  font-size: 1.5em;
+}
+
+footer i {
+  width: 1em;
+  padding: 0px 10px;
+  text-align: center;
+  color: #555;
+}
+
+footer i:hover {
+  color: black;
+}
+
+#footbottom {
+  color: #555;
+}

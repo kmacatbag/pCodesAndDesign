@@ -1,0 +1,160 @@
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script';
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+    background-image: url(pictures/img.jpg);
+    color: #272727;
+    font: 16px/40px "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+}
+
+hr {
+    background: #5e5e5e;
+    border: none;
+    height: 1px;
+    margin: 0;
+    min-height: 1px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 320px;
+    left: 50%;
+    margin: -160px 0 0 -152px;
+    position: absolute;
+    top: 50%;
+    width: 304px;
+}
+
+/* ---------- To-Do-List ---------- */
+
+    .to-do-list {
+        background: white;
+        background: white;
+        background: linear-gradient(top, #aaa, #fff 2%);
+        -webkit-background-size: 100% 40px;
+        -moz-background-size: 100% 40px;
+        background-size: 100% 40px;
+        border-radius: 5px;
+        font-size: 14px;
+        padding: 40px 32px;
+        width: 240px;
+    }
+
+        .to-do-list h2 {
+            color: #5e5e5e;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .to-do-list input[type=checkbox] {
+            cursor: pointer;
+            position: relative;
+            visibility: hidden;
+        }
+
+        .to-do-list input[type="checkbox"]:after {
+            border: 1px solid #166B94;
+            border-radius: 3px;
+            color: #fff;
+            content: "";
+            display: block;
+            height: 16px;
+            line-height: 16px;
+            position: absolute;
+            text-align: center;
+            visibility: visible;
+            width: 16px;
+        }
+
+        .to-do-list input[type=checkbox]:checked:after {
+            border: 1px solid #979797;
+            color: #979797;
+            content: "✓";
+        }
+
+        .to-do-list input[type=checkbox]:checked + label {
+            color: #979797;
+            font-weight: normal;
+            text-decoration: line-through;
+        }
+
+        .to-do-list label {
+            color: #166B94;
+            font-weight: bold;
+            margin-left: 12px;
+        }
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: white;
+    text-shadow: black 0px 0px 4px;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: white;
+        text-shadow: black 0px 0px 4px;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+
+    /* Quote fade in and out */
+    .quotes {
+        display: none;
+        font-family: 'Slabo 27px', serif;
+        color: black;
+        font-size: 20px;
+        text-align: left;
+        margin: 20%;
+        margin-left: 2em;
+        margin-right: 65%
+    }
+
+    /* Timer setting */
+    h5 {
+      font-family: 'Josefin Sans', sans-serif;
+      text-align: right;
+      color: white;
+      font-size: 60px;
+      margin-top: -24%;
+      margin-left: 10em
+    }
+

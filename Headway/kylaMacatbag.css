@@ -1,0 +1,126 @@
+body{
+	margin: 0;
+	padding: 0;
+    background:rgb(255,250,250);
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino,serif;
+}
+
+a{
+    font-size: 20px;
+    font-family: "Gill Sans", sans-serif;
+    }
+
+header   {
+  background: #222;
+  color: #FFF;
+  padding: 17px 27px;
+}
+
+.nav{
+	background-color: transparent;
+	color: #000000;
+	list-style: none;
+	text-align: right;
+	padding: 15px 0 0 0;
+    font-size: 15px;
+}
+
+.nav > li{
+	display: inline-block;
+	padding: 0 25px 0 25px;
+	font-size: 15px;
+}
+
+.nav > li > a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.nav > li > a:hover{
+	color: #c1c1c1;
+}
+
+.logo{
+	color: #000000;
+	float: left;
+	padding-left: 22px;
+    margin-top: -5px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.logo > a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.banner{
+	width 100%;
+	display: block;
+}
+
+.banner > .banner-image{
+	width: 100%;
+	display: block;
+}
+
+/* The photograph setting */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  width: calc(currentWidth - 20%);
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h2 {
+	color:black;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+	font-size: 24px;
+}
+
+h3 {
+	color: black;
+	font-family:cursive;
+	text-align: center;
+}
+
+p{
+	font-family: platino;
+	font-size: 18px;
+	color: black;
+}
+ 
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 150%;
+  margin-left:50px; 
+  margin-top: 10px;
+  margin-right:100px;
+}
+
+/* styling our footer */
+footer   {
+  background: #222;
+  color: #777;
+  padding: 40px;
+  text-align: center;
+}
+footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 40px;
+  margin: 0 auto 10px;
+}

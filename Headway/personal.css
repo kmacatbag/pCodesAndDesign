@@ -1,0 +1,101 @@
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script';
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(pictures/login.jpg);
+}
+
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    text-align: center;
+}
+
+.box h1{
+    color: white;
+    font-weight: 500;
+    font-size: 5em;
+}
+
+.box input[type = "text"],.box input[type= "password"]{
+    font: 16px/10px "Open Sans", sans-serif;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition:0.25s;
+}
+
+.box input[type = "text"]:focus,.box input["password"]:focus{
+    width: 280px;
+    border-color: green;
+}
+
+.box input[type = "submit"]{
+    font: 16px/10px "Open Sans", sans-serif;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid green;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition:0.25s;
+    cursor: pointer;
+}
+
+.box input[type = "submit"]: hover{
+    background: green; 
+}
+
+/* Sidebar control */
+.sidebar{
+    float: left;
+    width:100px;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+}
+
+.sidebar ul {
+    margin:0;
+    padding:0em;
+}
+
+.sidebar ul li{
+    list-style: none;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: white;
+    height: 80px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    display: block;
+    transition: 0.6s all;
+}
+
+.sidebar ul li a:hover{
+    background: rgb(192,192,192);
+}
