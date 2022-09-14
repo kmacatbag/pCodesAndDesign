@@ -1,0 +1,1 @@
+An idea designed to increase productivity. It's suppose to run on a certain amount of time while giving out quotes and a checklist. This idea was a first year project idea to an introductory to HTML and CSS. Soon picked up on Javascript to display the time and expiration. 
