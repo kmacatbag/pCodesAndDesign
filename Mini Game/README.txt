@@ -1,0 +1,1 @@
+This is a game was inspired by a Youtube Series called 'Project 863'. It currently is unfinished but! I visit from time to time to work on it and expand its functionality. This game was created in Unity (using C#) with top-down perspective. 
